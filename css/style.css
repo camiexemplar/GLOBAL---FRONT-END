@@ -1,4 +1,139 @@
+/*root*/
+:root {
+    --laranja: #4267df;
+    --aqua: rgb(165, 207, 193);
+    --branco: #ffffff;
+    --preto: #000000;
+    --vermelho: #ff0000;
+}
+
+
+/* Reset */
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.contain {
+    background-color: rgb(165, 207, 193);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    color: black;
+}
+
+/* Hamburguer */
+.hamb img {
+    width: 40px;
+    cursor: pointer;
+}
+.container__botao {
+    display: none;
+}
+.lista-hamb {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1.0vw;
+    background-color:rgb(142, 199, 199);
+    list-style: none;
+    text-transform: uppercase;
+    width: 50vw;
+    padding: 20px;
+    text-align: center;
+}
+
+.lista-hamb li {
+    margin: 10px;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.204);
+}
+
+.lista-hamb li a {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: bold;
+}
+.categorias {
+    color: var(--laranja);
+    font-weight: bold;
+}
+
+/* Checkbox controlando o menu */
+.container__botao:checked ~ .lista-hamb {
+    display: block;
+}
+
+/* Conteúdo Home */
+.infohome {
+    padding: 30px;
+    text-align: center;
+}
+
+.infohome h2 {
+    font-size: 45px;
+    margin: 25px;
+}
+
+.infohome h2 span {
+    color: red;
+}
+
+.infohome p {
+    margin-bottom: 20vw;
+}
+
+.botao-saiba {
+    background-color: var(--aqua);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(165, 207, 193);
+    padding: 20px;
+    color: black;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ul-footer {
+    gap: 3vw;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.direitos-footer {
+    text-align: center;
+    margin-top: 25px;
 }
