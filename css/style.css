@@ -1,11 +1,12 @@
 /*root*/
 :root {
     --laranja: #4267df;
-    --aqua: rgba(0, 109, 11, 0.843);
+    --aqua: rgba(44, 107, 51, 0.843);
     --branco: #ffffff;
     --preto: #000000;
     --vermelho: #ff0000;
-    --fonte-primaria: 'Poppins', sans-serif;
+    --fonte-primaria: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fonte-segundaria: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -81,22 +82,34 @@
     display: block;
 }
 /*imagem amazon*/
-.imgamazon {
- width: 500px;
- height: 300px;
- background-image: url(/img/amazonia.svg);
- background-size: cover;
- background-position: center;
-  display: flex;
+.imgamazon-slideshow {
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
+  position: relative;
+  transition: background-image 1s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.577);
 }
+.imgamazon {
+ background-color: rgba(0, 0, 0, 0.4);
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
 .titulo-main {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: --fonte-segundaria;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.295);
   font-size: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   left: 15px;
   top: 120px;
+  z-index: 1;
+  text-transform: uppercase;
 }
 
 /* Conteúdo Home */
@@ -146,8 +159,8 @@
     font-size: 20px;
     margin: 15px;
     padding: 40px;
-    font-family: var(--fonte-primaria);
-    font-weight: 500;
+    font-weight: 400;
+    text-align: center;
     color: var(--branco);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.276);
 }
