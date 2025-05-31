@@ -1,10 +1,11 @@
 /*root*/
 :root {
     --laranja: #4267df;
-    --aqua: rgb(165, 207, 193);
+    --aqua: rgb(0, 130, 13);
     --branco: #ffffff;
     --preto: #000000;
     --vermelho: #ff0000;
+    --fonte-primaria: 'Poppins', sans-serif;
 }
 
 
@@ -12,29 +13,27 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 /* Header */
 .contain {
-    background-color: rgb(165, 207, 193);
+    background-color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 20px 15px;
     position: relative;
 }
 
 /* Logo */
 .logo {
-    font-size: 24px;
-    color: black;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
 }
 
 /* Hamburguer */
+
 .hamb img {
     width: 40px;
     cursor: pointer;
@@ -46,67 +45,130 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    right: 1.0vw;
-    background-color:rgb(142, 199, 199);
+    right: 0px;
+    background-color:var(--branco);
     list-style: none;
     text-transform: uppercase;
     width: 50vw;
     padding: 20px;
     text-align: center;
+    border-bottom: 1px solid var(--preto);
+    border-left: 1px solid var(--preto);
+    border-right: 1px solid var(--preto);
 }
 
 .lista-hamb li {
-    margin: 10px;
-    padding: 15px;
-    font-size: 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.204);
+  margin: 10px auto;
+  font-size: 16px;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid var(--preto);
+  padding-top: 10px;
 }
 
 .lista-hamb li a {
     text-decoration: none;
     color: var(--preto);
-    font-weight: bold;
 }
 .categorias {
-    color: var(--laranja);
-    font-weight: bold;
+    color: var(--aqua);
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 /* Checkbox controlando o menu */
 .container__botao:checked ~ .lista-hamb {
     display: block;
 }
+/*imagem amazon*/
+.imgamazon {
+ width: 500px;
+ height: 300px;
+ background-image: url(/img/amazonia.svg);
+ background-size: cover;
+ background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+}
+.titulo-main {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  left: 15px;
+  top: 120px;
+}
 
 /* Conteúdo Home */
 .infohome {
-    padding: 30px;
-    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 20px;
+    font-family: var(--fonte-primaria);
 }
-
-.infohome h2 {
-    font-size: 45px;
-    margin: 25px;
-}
-
-.infohome h2 span {
-    color: red;
-}
-
-.infohome p {
-    margin-bottom: 20vw;
+.botaohome {
+  text-align: center;
 }
 
 .botao-saiba {
-    background-color: var(--aqua);
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  background-color: var(--aqua);
+  padding: 15px 35px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-family: var(--fonte-primaria);
 }
+
+.dadoshome {
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+.numdados {
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.dadosagricultor {
+    background-color: var(--aqua);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+.dadosagricultor p {
+    background-color: rgba(194, 255, 166, 0.272);
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 15px;
+    padding: 40px;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    color: var(--branco);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 .footer {
-    background-color: rgb(165, 207, 193);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     color: black;
 }

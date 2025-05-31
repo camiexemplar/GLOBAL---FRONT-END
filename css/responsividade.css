@@ -3,9 +3,89 @@
 }
 @media (max-width: 1024px) {
 
+/*imagem amazon*/
+.imgamazon {
+ width: 100vw;
+ height: 50vw;
+ background-image: url(/img/amazonia.svg);
+ background-size: cover;
+ background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+}
+.titulo-main {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  left: 25px;
+  top: 120px;
+  position: absolute
+}
+.lista-hamb { /*sempre por cima*/
+  z-index: 1000;
+}
 }
 @media (min-width: 1025px) {
-  .lista-hamb {
-    width: 25vw;
+
+  /*imagem amazon*/
+.imgamazon {
+ width: 100vw;
+ height: 30vw;
+ background-image: url(/img/amazonia.svg);
+ background-size: cover;
+ background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
 }
+.titulo-main {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 65px;
+  color: rgb(0, 0, 0);
+  left: 25px;
+  top: 120px;
+  position: absolute
+}
+.lista-hamb { /*sempre por cima*/
+  z-index: 1000;
+}
+/* Hamburguer */
+
+.lista-hamb {
+    width: 30vw;
+}
+.dadoshome {
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+.numdados {
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.dadosagricultor {
+    background-color: var(--aqua);
+    padding: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.dadosagricultor p {
+    background-color: rgba(194, 255, 166, 0.097);
+    border-radius: 25px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    color: var(--branco);
+    flex-basis: 30%;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
 }
