@@ -56,6 +56,7 @@
     border-bottom: 1px solid var(--preto);
     border-left: 1px solid var(--preto);
     border-right: 1px solid var(--preto);
+    z-index: 2;
 }
 
 .lista-hamb li {
@@ -73,8 +74,9 @@
 }
 .categorias {
     color: var(--aqua);
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-family: var(--fonte-segundaria);
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 /* Checkbox controlando o menu */
@@ -90,7 +92,7 @@
   background-repeat: no-repeat;
   position: relative;
   transition: background-image 1s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.577);
+  border-bottom: 5px solid var(--aqua);
 }
 .imgamazon {
  background-color: rgba(0, 0, 0, 0.4);
@@ -114,10 +116,19 @@
 
 /* Conteúdo Home */
 .infohome {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.121);
+  text-align: center;
+}
+.infohome p {
     font-weight: 500;
-    font-size: 17px;
+    font-size: 18px;
     padding: 20px;
     font-family: var(--fonte-primaria);
+    text-align: center;
+    
 }
 .botaohome {
   text-align: center;
@@ -154,7 +165,7 @@
     box-sizing: border-box;
 }
 .dadosagricultor p {
-    background-color: rgba(194, 255, 166, 0.272);
+    background-color: rgba(194, 255, 166, 0.194);
     border-radius: 15px;
     font-size: 20px;
     margin: 15px;
@@ -269,6 +280,7 @@
     background-color: rgb(255, 255, 255);
     padding: 20px;
     color: black;
+    width: 100%;
 }
 
 .container-footer {
