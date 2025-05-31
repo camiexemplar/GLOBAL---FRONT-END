@@ -1,7 +1,7 @@
 /*root*/
 :root {
     --laranja: #4267df;
-    --aqua: rgb(0, 130, 13);
+    --aqua: rgba(0, 109, 11, 0.843);
     --branco: #ffffff;
     --preto: #000000;
     --vermelho: #ff0000;
@@ -89,6 +89,7 @@
  background-position: center;
   display: flex;
   background-repeat: no-repeat;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.577);
 }
 .titulo-main {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -117,6 +118,7 @@
   color: white;
   display: inline-block;
   font-family: var(--fonte-primaria);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.513);
 }
 
 .dadoshome {
@@ -147,17 +149,100 @@
     font-family: var(--fonte-primaria);
     font-weight: 500;
     color: var(--branco);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.276);
 }
 
 
 
 
 
+/*pagina integrantes*/
+.tudosobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
 
+.integrantes,
+.quemsomosnos,
+.objetivoprojeto {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.239);;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.849);
+  font-size: 1.2rem;
+  margin: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 50px;
+}
+.membros {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
+.membros img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 100px;
+}
 
+.membros .info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 
+.membros .nome {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
 
+.membros .rm {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.membros .github,
+.membros .linkedin {
+  text-decoration: none;
+  color: #2c5f2d;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.membros .github:hover,
+.membros .linkedin:hover {
+  text-decoration: underline;
+  color: #1f3d1b;
+}
+
+.centraliza {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 20px;
+  font-family: var(--fonte-primaria);
+  font-size: 35px;
+}
+
+#turma {
+  font-family: var(--fonte-primaria);
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+}
 
 
 
