@@ -16,3 +16,31 @@ function trocarBackground() {
 }
 trocarBackground ();
 setInterval(trocarBackground, 5000);
+
+
+/* faq */
+
+const botoes = document.querySelectorAll('.faq-botao');
+
+  botoes.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const resposta = btn.nextElementSibling;
+      const isAtivo = btn.classList.contains('ativo');
+      btn.blur();
+
+      botoes.forEach(b => {
+        b.classList.remove('ativo');
+        const r = b.nextElementSibling;
+        r.classList.remove('show');
+        r.setAttribute('hidden', true);
+        b.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isAtivo) {
+        btn.classList.add('ativo');
+        resposta.classList.add('show');
+        resposta.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });

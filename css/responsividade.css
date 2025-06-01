@@ -1,19 +1,29 @@
 @media (max-width: 768px) {
   .imgamazon-slideshow {
-  width: 100vw;
-  height: 50vw;
+  width: 120vw;
+  height: 70vw;
   
   }
   .titulo-main {
   font-size: 25px;
 }
 
+
+/*integrantes*/
+
+  .membros {
+    flex-direction: column;
+    text-align: center;
+  }
+  .integrantes {
+  width: 80%;
+}
 }
 @media (min-width: 768px){
 
 /*imagem amazon*/
 .imgamazon-slideshow {
-  width: 100vw;
+  width: 110vw;
   height: 40vw;
 }
 
@@ -23,8 +33,78 @@
 .lista-hamb { /*sempre por cima*/
   z-index: 1000;
 }
+
+/*página faq */
+.faq-tudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+
+}
+.faq-botao {
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  margin: 0 auto 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 2px solid var(--preto);
+  font-weight: 600;
+  
+}
+.faq-botao::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.4s ease;
+  font-size: 1rem;
+  color: #666;
+}
+.faq-botao.ativo::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-size: 20px;
+  color: #000000;
+  font-family: var(--fonte-primaria);
+  font-weight: 500;
+
 }
 
+.resposta.show {
+  max-height: 1000px;
+  padding: 3px;
+}
+
+
+
+/*integrantes*/
+
+.integrantes {
+  width: 90vw;
+}
+
+.membros {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+}
 
 
 
@@ -127,5 +207,37 @@
 .dadosagricultor p {
   padding: 60px;
 }
+
+/*integrantes*/
+.integrantes {
+  width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (hover: hover) {
+  .faq-botao:hover {
+    background-color: #0b8d3286;
+  }
+.membros .github:hover,
+.membros .linkedin:hover {
+  text-decoration: underline;
+  color: #1f3d1b;
+}
+}
+
 
 }
