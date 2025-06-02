@@ -262,22 +262,22 @@
 
 /*página faq */
 .faq-tudo {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
 
 
 }
 .faq-botao {
+  display: block;
   position: relative;
-  width: 100%;
-  font-size: 18px;
-  margin: 0 auto 20px;
+  width: 90%;
   border: none;
-  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin: 20px auto;
+  background-color: var(--branco);
   padding: 20px;
   cursor: pointer;
-  border-bottom: 2px solid var(--preto);
+  border-bottom: 3px solid var(--preto);
+  border-radius: 50px;
   font-weight: 600;
   
 }
@@ -295,7 +295,6 @@
   transform: translateY(-50%) rotate(180deg);
 }
 .resposta {
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
   font-size: 20px;
@@ -306,9 +305,19 @@
 }
 
 .resposta.show {
-  max-height: 1000px;
-  padding: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
+#faqlink {
+  text-decoration:underline;
+  color: var(--aqua);
+  
+}
+.corfooterfaq {
+  color: var(--aqua);
+  
+}
+
 
 
 
@@ -342,6 +351,7 @@ h2 {
   font-size: 45px;
   text-align: center;
   font-weight: 600;
+
 }
 .formulario {
   padding: 30px 80px;
@@ -416,7 +426,6 @@ background-color: var(--aqua);
 /* Footer */
 .footer {
     background-color: rgb(255, 255, 255);
-    padding: 20px;
     color: black;
     width: 100%;
 }
@@ -425,13 +434,14 @@ background-color: var(--aqua);
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
 }
 .ul-footer {
     gap: 3vw;
 }
 
 .footer h3 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .footer ul {
@@ -445,5 +455,5 @@ background-color: var(--aqua);
 
 .direitos-footer {
     text-align: center;
-    margin-top: 25px;
+    margin-bottom: 10px;
 }

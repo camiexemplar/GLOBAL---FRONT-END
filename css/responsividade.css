@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .imgamazon-slideshow {
-  width: 120vw;
+  width: 100vw;
   height: 70vw;
   
   }
@@ -23,7 +23,7 @@
 
 /*imagem amazon*/
 .imgamazon-slideshow {
-  width: 110vw;
+  width: 100vw;
   height: 40vw;
 }
 
@@ -36,7 +36,6 @@
 
 /*página faq */
 .faq-tudo {
-  max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
 
@@ -44,38 +43,14 @@
 }
 .faq-botao {
   position: relative;
-  width: 100%;
   font-size: 18px;
-  margin: 0 auto 20px;
-  border: none;
-  background-color: rgb(255, 255, 255);
   padding: 20px;
-  cursor: pointer;
-  border-bottom: 2px solid var(--preto);
-  font-weight: 600;
+  max-width: 1250px;
   
 }
-.faq-botao::after {
-  content: "▼";
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.4s ease;
-  font-size: 1rem;
-  color: #666;
-}
-.faq-botao.ativo::after {
-  transform: translateY(-50%) rotate(180deg);
-}
 .resposta {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  font-size: 20px;
-  color: #000000;
-  font-family: var(--fonte-primaria);
-  font-weight: 500;
+  max-width: 1250px;
+  margin: 0 auto;
 
 }
 
@@ -112,7 +87,7 @@
 
   /*imagems*/
 .imgamazon-slideshow {
-  width: 100vw;
+  width: 100%;
   height: 30vw;
   background-size: cover;
   background-position: top;
@@ -202,7 +177,7 @@
     padding: 50px;
     flex-wrap: nowrap;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
 }
 .dadosagricultor p {
   padding: 60px;
@@ -213,11 +188,7 @@
   width: 90%;
 }
 
-
-
-
-
-
+/*faq*/
 
 
 
