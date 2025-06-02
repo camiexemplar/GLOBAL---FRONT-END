@@ -1,13 +1,8 @@
 @media (max-width: 768px) {
-  .imgamazon-slideshow {
-  width: 100vw;
-  height: 70vw;
-  
-  }
+
   .titulo-main {
   font-size: 25px;
 }
-
 
 /*integrantes*/
 
@@ -23,7 +18,7 @@
 
 /*imagem amazon*/
 .imgamazon-slideshow {
-  width: 100vw;
+  width: 120vw;
   height: 40vw;
 }
 
@@ -41,8 +36,11 @@
 
 
 }
+.faq-bloco {
+  margin: 0 auto;
+  max-width: 1250px;
+}
 .faq-botao {
-  position: relative;
   font-size: 18px;
   padding: 20px;
   max-width: 1250px;
@@ -51,12 +49,13 @@
 .resposta {
   max-width: 1250px;
   margin: 0 auto;
+  font-size: 20px;
 
 }
 
 .resposta.show {
   max-height: 1000px;
-  padding: 3px;
+  padding: 30px;
 }
 
 
@@ -188,10 +187,32 @@
   width: 90%;
 }
 
-/*faq*/
 
 
+/*página faq */
+.faq-tudo {
+  margin: 0 auto;
+  padding: 40px 20px;
 
+}
+.faq-bloco {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.faq-botao {
+  font-size: 18px;
+  padding: 20px;
+  max-width: 1000px;
+  
+}
+.resposta {
+  max-width: 1000px;
+}
+
+.resposta.show {
+  max-height: 1000px;
+  padding: 30px;
+}
 
 
 
