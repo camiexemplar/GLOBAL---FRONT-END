@@ -51,7 +51,7 @@ const botoes = document.querySelectorAll('.faq-botao');
   
 /*formulário*/
 
-const form = document.querySelector("form");
+const form = document.getElementById("form");
 
 if (form) {
     const nameInput = document.querySelector("#nome");
@@ -59,8 +59,6 @@ if (form) {
     const motivoInput = document.querySelector("#motivo");
     const telInput = document.querySelector("#celular");
     const textareaInput = document.querySelector("#mensagem");
-    const generoCheckboxes = document.querySelectorAll('input[name="genero"]');
-    const generoErrorAnchor = document.querySelector("#genero-erro"); 
     const successMessageDiv = document.querySelector("#mensagem-sucesso");
 
     function isEmailValid(email) {
@@ -109,7 +107,7 @@ if (form) {
             clearError(nameInput);
         }
 
-        
+
         // Validação de email
         if (formIsValid && emailInput.value.trim() === "") { 
             errorInput(emailInput, "Por favor, preencha seu email.");
@@ -170,27 +168,6 @@ if (form) {
             clearError(textareaInput);
         }
 
-        // Gênero
-        let generoSelecionado = false;
-        generoCheckboxes.forEach((radio) => {
-            if (radio.checked) generoSelecionado = true;
-        });
-
-
-        if (formIsValid && !generoSelecionado) {
-            if (generoErrorAnchor) {
-                generoErrorAnchor.innerText = "Por favor, selecione seu gênero!";
-                generoErrorAnchor.parentElement.classList.add("error"); 
-            }
-            generoCheckboxes[0].focus(); 
-            formIsValid = false;
-        } else if (formIsValid) {
-            if (generoErrorAnchor) {
-                generoErrorAnchor.innerText = "";
-                generoErrorAnchor.parentElement.classList.remove("error");
-            }
-        }
-
         return formIsValid;
     }
 
@@ -226,17 +203,6 @@ if (form) {
         });
     });
 
-  
-    generoCheckboxes.forEach(radio => {
-        radio.addEventListener('change', () => {
-          
-            if (generoErrorAnchor) {
-                generoErrorAnchor.innerText = "";
-                generoErrorAnchor.parentElement.classList.remove("error");
-            }
-        });
-    });
-
     // Máscara de telefone
     telInput.addEventListener("input", () => {
         let valor = telInput.value.replace(/\D/g, "");
@@ -251,3 +217,21 @@ if (form) {
         }
     });
 }
+//contador da textarea
+const textarea = document.getElementById('mensagem');
+const contador = document.getElementById('contador');
+const aviso = document.getElementById('aviso-limite');
+const limite = 1501;
+
+textarea.addEventListener('input', () => {
+  const tamanhoAtual = textarea.value.length;
+
+  if (tamanhoAtual >= limite) {
+    textarea.value = textarea.value.substring(0, limite); // Corta no limite
+    aviso.style.display = 'block'; // Mostra aviso
+  } else {
+    aviso.style.display = 'none'; // Esconde aviso se não tiver no limite
+  }
+
+  contador.innerText = `${tamanhoAtual} / ${limite}`;
+});

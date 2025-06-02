@@ -81,6 +81,19 @@
 }
 
 
+/*formulario*/
+
+.formulario {
+  font-size: 20px;
+  width: 100vw;
+}
+input,
+select,
+textarea {
+  font-size: 1.4rem;
+  margin: 5px;
+}
+
 
 @media (min-width: 992px) {
 
@@ -214,6 +227,12 @@
   padding: 30px;
 }
 
+/*página formulario contato */
+
+.formulario {
+  max-width: 950px;
+  
+}
 
 
 

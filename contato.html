@@ -45,52 +45,31 @@
     </section>
 
 <section class="faleconosco" aria-label="Formulário de contato">
-  <h2 id="contatoh2">Fale conosco: </h2>
+  <h2 id="contatoh2">Fale com a gente! </h2>
+  <p id="preencha-p">Preencha o formulário abaixo e logo você será respondido: </p>
   <form class="formulario" id="form" novalidate>
-    <p id="preencha-p">Preencha o formulário abaixo e logo você será respondido</p>
 
     <div class="form-group">
-      <label for="nome">Digite seu nome: </label>
+      <label for="nome"></label>
       <input type="text" id="nome" placeholder="Digite seu nome completo!" aria-describedby="nome-erro" required>
       <a id="nome-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
 
     <div class="form-group">
-      <label for="email">Digite seu email: </label>
+      <label for="email"></label>
       <input type="email" id="email" placeholder="digite seu email!" aria-describedby="email-erro" required>
       <a id="email-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
 
     <div class="form-group">
-      <label for="celular">Digite seu número de celular: </label>
+      <label for="celular"></label>
       <input type="tel" name="celular" id="celular" placeholder="digite seu numero de celular!" aria-describedby="celular-erro" required>
       <a id="celular-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
-
-    <label>Gênero:</label>
-    <div class="form-group" id="genero-group">
-  <div id="gentitle">
-  </div>
-  <div>
-    <input type="radio" id="gen-masc" name="genero" value="masculino">
-    <label for="gen-masc">Masculino</label>
-  </div>
-  <div>
-    <input type="radio" id="gen-fem" name="genero" value="feminino">
-    <label for="gen-fem">Feminino</label>
-  </div>
-  <div>
-    <input type="radio" id="gen-outro" name="genero" value="outro">
-    <label for="gen-outro">Prefiro não declarar</label>
-  </div>
-  <a id="genero-erro" role="alert" aria-live="assertive"></a>
-</div>
-
-
-    <div class="form-group">
-      <label for="motivo" alt="selecione o motivo de contato">Selecione o motivo do contato: </label>
+        <div class="form-group">
+      <label for="motivo" id="label-motivo" alt="selecione o motivo de contato"></label>
       <select name="motivo" id="motivo" aria-describedby="motivo" required>
-         <option value="" disabled selected>Selecione o motivo do contato</option>
+         <option value="" disabled selected>Selecione o motivo do contato: </option>
          <option value="duvidas">Dúvidas</option>
          <option value="reclamações">Reclamação</option>
          <option value="feedback">Feedback ou sugestão</option>
@@ -99,17 +78,26 @@
       <a id="motivo-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
 
-
+    
+    
     <div class="form-group">
       <label for="mensagem">Digite sua mensagem para nós! </label>
-      <textarea name="mensagem" id="mensagem" rows="6" cols="25" aria-describedby="mensagem-erro" required></textarea>
+      <textarea name="mensagem" id="mensagem" rows="6" cols="25" max-length="1000" aria-describedby="mensagem-erro" required></textarea>
+      <p id="aviso-limite" style="display: none; color: red; font-size: 0.9rem;">
+        Você atingiu o limite de caracteres!
+      </p>
+      <div id="contador">0 / 1500</div>
       <a id="mensagem-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
 
+    <div class="form-group">
+  <label for="arquivo">Anexar documento ou foto:</label>
+  <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .pdf">
+</div>
+    
     <input type="submit" value="Enviar" id="enviar" aria-label="Enviar formulário de contato">
     <div id="mensagem-sucesso" role="alert" aria-live="polite">Mensagem enviada com sucesso!</div>
 
-  </div>
   </form>
 </section>
 
