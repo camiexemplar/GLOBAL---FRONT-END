@@ -44,10 +44,10 @@
         </header>
     </section>
 
-<section class="newsletter" aria-label="Formulário de contato">
+<section class="faleconosco" aria-label="Formulário de contato">
+  <h2 id="contatoh2">Fale conosco: </h2>
   <form class="formulario" id="form" novalidate>
-    <h2 id="atualizacoes">Receba atualizações do projeto! </h2>
-    <p id="preencha-p">Preencha o formulário abaixo e receba atualizações sobre o projeto Queimada Zero! </p>
+    <p id="preencha-p">Preencha o formulário abaixo e logo você será respondido</p>
 
     <div class="form-group">
       <label for="nome">Digite seu nome: </label>
@@ -67,26 +67,9 @@
       <a id="celular-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
 
-    <div class="form-group">
-      <label for="faixa" alt="Selecione sua faixa-etária">Selecione sua faixa-etária: </label>
-      <select name="faixa" id="faixa" aria-describedby="motivo" required>
-         <option value="" disabled selected>Selecione</option>
-          <option value="menos18">Menos de 18 anos</option>
-      <option value="18-30 anos">18 a 30 anos</option>
-      <option value="31-50">31 a 50 anos</option>
-      <option value="mais50">Mais de 50 anos</option>
-      </select>
-      <a id="motivo-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
-
-
-
-
-
-
+    <label>Gênero:</label>
     <div class="form-group" id="genero-group">
   <div id="gentitle">
-    <label>Gênero:</label>
   </div>
   <div>
     <input type="radio" id="gen-masc" name="genero" value="masculino">
@@ -103,23 +86,32 @@
   <a id="genero-erro" role="alert" aria-live="assertive"></a>
 </div>
 
-    <div class="formulario-group">
-      <input type="checkbox" id="newsletter" name="newsletter" value="sim">
-      <label for="newsletter">Deseja receber novidades sobre queimadas e sobre o projeto Queimada Zero?</label>
+
+    <div class="form-group">
+      <label for="motivo" alt="selecione o motivo de contato">Selecione o motivo do contato: </label>
+      <select name="motivo" id="motivo" aria-describedby="motivo" required>
+         <option value="" disabled selected>Selecione o motivo do contato</option>
+         <option value="duvidas">Dúvidas</option>
+         <option value="reclamações">Reclamação</option>
+         <option value="feedback">Feedback ou sugestão</option>
+         <option value="outros">Outros</option>
+      </select>
+      <a id="motivo-erro" role="alert" aria-live="assertive">Erro</a>
     </div>
 
 
+    <div class="form-group">
+      <label for="mensagem">Digite sua mensagem para nós! </label>
+      <textarea name="mensagem" id="mensagem" rows="6" cols="25" aria-describedby="mensagem-erro" required></textarea>
+      <a id="mensagem-erro" role="alert" aria-live="assertive">Erro</a>
+    </div>
+
     <input type="submit" value="Enviar" id="enviar" aria-label="Enviar formulário de contato">
-    <div id="mensagem-sucesso" role="alert" aria-live="polite"></div>
+    <div id="mensagem-sucesso" role="alert" aria-live="polite">Mensagem enviada com sucesso!</div>
+
+  </div>
   </form>
 </section>
-
-
-
-
-
-
-
 
 
 
