@@ -1,7 +1,7 @@
 /*root*/
 :root {
     --laranja: #4267df;
-    --aqua: rgba(44, 107, 51, 0.843);
+    --aqua: rgba(34, 96, 41, 0.843);
     --branco: #ffffff;
     --preto: #000000;
     --vermelho: #ff0000;
@@ -92,7 +92,6 @@
   background-repeat: no-repeat;
   position: relative;
   transition: background-image 1s ease-in-out;
-  border-bottom: 5px solid var(--aqua);
 }
 .imgamazon {
  background-color: rgba(0, 0, 0, 0.4);
@@ -119,7 +118,6 @@
   max-width: 1000px;
   padding: 20px;
   margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.121);
   text-align: center;
 }
 .infohome p {
@@ -188,43 +186,60 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 10px;
-  margin-top: 25px;
-  margin-bottom: 45px;
+  gap: 20px;
+  padding: 20px;
 }
 
-.integrantes,
-.quemsomosnos,
-.objetivoprojeto {
-  background: rgba(255, 255, 255, 0.239);
-  border-bottom: 4px solid black;
-  border-top: 2px solid black;
+.quemsomosnos {
+  background-color: var(--aqua);
   font-size: 1.2rem;
   margin: 10px;
   font-weight: 500;
-  border-radius: 30px;
   padding: 50px;
+  text-align: center;
 }
-.membros {
+
+.objetivoprojeto {
+  background: rgba(255, 255, 255, 0.239);
+  font-size: 1.2rem;
+  margin: 10px;
+  font-weight: 500;
+  padding: 50px;
+  text-align: center;
+}
+.integrantes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  padding: 50px;
-  gap: 20px;
-  border-radius: 0px;
-  margin: 0 auto 25px;
+  background-color: var(--aqua);
+}
+.membros {
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s;
 }
 
 .membros img {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 100px;
 }
 
 .membros .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6px;
+  text-align: center;
 }
 
 .membros .nome {
@@ -233,16 +248,17 @@
 }
 
 .membros .rm {
-  font-size: 0.95rem;
-  color: #333333;
+    font-size: 1.1rem;
+  color: #555;
 }
 
 .membros .github,
 .membros .linkedin {
   text-decoration: none;
-  color: #2c5f2d;
-  font-weight: bold;
-  transition: 0.2s;
+  font-family: var(--fonte-segundaria);
+  color: var(--aqua);
+  font-size: 1.1rem;
+  padding: 3px;
 }
 
 .centraliza {

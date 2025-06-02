@@ -4,15 +4,6 @@
   font-size: 25px;
 }
 
-/*integrantes*/
-
-  .membros {
-    flex-direction: column;
-    text-align: center;
-  }
-  .integrantes {
-  width: 80%;
-}
 }
 @media (min-width: 768px){
 
@@ -58,13 +49,7 @@
   padding: 30px;
 }
 
-
-
 /*integrantes*/
-
-.integrantes {
-  width: 90vw;
-}
 
 .membros {
   width: 100%;
@@ -93,6 +78,74 @@ textarea {
   font-size: 1.4rem;
   margin: 5px;
 }
+
+/*sobrenos*/
+
+.tudosobre {
+  padding: 0;
+}
+
+.quemsomosnos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 50px 80px;
+    font-size: 24px;
+}
+.objetivoprojeto {
+  font-size: 24px;
+}
+.textosomos {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.integrantes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 0;
+    width: 120vw;
+    padding: 50px 80px;
+  }
+
+  .membros {
+    width: 220px;
+    padding: 30px;
+    background-color: #ffffff;
+  }
+
+  .membros img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .membros .nome {
+    font-size: 1.3rem;
+  }
+
+  .membros .rm {
+    font-size: 1.2rem;
+  }
+
+  .membros .github,
+  .membros .linkedin {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+.centraliza, #turma {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
 
 
 @media (min-width: 992px) {
@@ -235,8 +288,70 @@ textarea {
 }
 
 
+/*sobrenos*/
 
+.tudosobre {
+  padding: 0;
+}
 
+.quemsomosnos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 50px 80px;
+
+    text-align: center;
+}
+.textosomos {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.integrantes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 0;
+    width: 120vw;
+    padding: 50px 80px;
+  }
+
+  .membros {
+    width: 300px;
+    padding: 30px;
+    background-color: #ffffff;
+  }
+
+  .membros img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .membros .nome {
+    font-size: 1.2rem;
+  }
+
+  .membros .rm {
+    font-size: 1.2rem;
+  }
+
+  .membros .github,
+  .membros .linkedin {
+    font-size: 1rem;
+  }
+
+.centraliza, #turma {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+}
 
 
 @media (hover: hover) {
@@ -250,5 +365,3 @@ textarea {
 }
 }
 
-
-}
