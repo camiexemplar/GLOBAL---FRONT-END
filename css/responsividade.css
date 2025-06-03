@@ -147,7 +147,6 @@ textarea {
 }
 
 
-
 @media (min-width: 992px) {
 
   /*imagems*/
@@ -362,6 +361,20 @@ textarea {
 .membros .linkedin:hover {
   text-decoration: underline;
   color: #1f3d1b;
+}
+
+
+/*projetos*/
+
+.email__numero {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.email__numero input {
+  flex: 1;
+  min-width: 0;
 }
 }
 

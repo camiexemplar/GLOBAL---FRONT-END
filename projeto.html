@@ -44,53 +44,44 @@
         </header>
 
 <section class="newsletter" aria-label="Formulário de contato">
-  <form class="formulario" id="form" novalidate>
-    <h2 id="atualizacoes">Receba atualizações do projeto! </h2>
-    <p id="preencha-p">Preencha o formulário abaixo e receba atualizações sobre o projeto Queimada Zero! </p>
+  <form class="formularionewsletter" id="form" novalidate>
+    <h2 id="atualizacoes-newsletter">Inscreva-se no boletim de ocorrências abaixo e receba localizações de queimadas próximas à sua casa! </h2>
 
-    <div class="form-group">
-      <label for="nome">Digite seu nome: </label>
-      <input type="text" id="nome" placeholder="Digite seu nome completo!" aria-describedby="nome-erro" required>
+    <div class="newsletter__pai">
+      <label for="nome"></label>
+      <input type="text" id="nomenewsletter" placeholder="Digite seu nome!" aria-describedby="nome-erro" required>
       <a id="nome-erro" role="alert" aria-live="assertive">Erro</a>
+
+<div class="email__numero">
+  <div class="campo">
+    <label for="email"></label>
+    <input type="email" id="emailnewsletter" placeholder="digite seu email!" aria-describedby="email-erro" required>
+    <a id="email-erro" role="alert" aria-live="assertive">Erro</a>
+  </div>
+
+  <div class="campo">
+    <label for="celular"></label>
+    <input type="tel" name="celular" id="celularnewsletter" placeholder="digite seu numero de celular!" aria-describedby="celular-erro" required>
+    <a id="celular-erro" role="alert" aria-live="assertive">Erro</a>
+  </div>
+</div>
+
+
+<div class="checkbox__newsletter">
+  <input type="checkbox" id="newsletterassine" name="newsletter" value="sim">
+  <label for="newsletterassine">Deseja receber novidades sobre queimadas e sobre o projeto Queimada Zero?</label>
+</div>
+
+      
+      
+      <input type="submit" value="Enviar" id="enviarnewsletter" aria-label="Enviar formulário de contato">
+      <div id="mensagem-sucesso" role="alert" aria-live="polite"></div>
     </div>
-
-    <div class="form-group">
-      <label for="email">Digite seu email: </label>
-      <input type="email" id="email" placeholder="digite seu email!" aria-describedby="email-erro" required>
-      <a id="email-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
-
-    <div class="form-group">
-      <label for="celular">Digite seu número de celular: </label>
-      <input type="tel" name="celular" id="celular" placeholder="digite seu numero de celular!" aria-describedby="celular-erro" required>
-      <a id="celular-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
-    
-
-    <div class="form-group">
-      <label for="faixa" alt="Selecione sua faixa-etária">Selecione sua faixa-etária: (opcional)</label>
-      <select name="faixa" id="faixa" aria-describedby="motivo" required>
-         <option value="" disabled selected>Selecione</option>
-          <option value="menos18">Menos de 18 anos</option>
-      <option value="18-30 anos">18 a 30 anos</option>
-      <option value="31-50">31 a 50 anos</option>
-      <option value="mais50">Mais de 50 anos</option>
-      </select>
-    </div>
-
-
-
-    <div class="formulario-group">
-      <input type="checkbox" id="newsletter" name="newsletter" value="sim">
-      <label for="newsletter">Deseja receber novidades sobre queimadas e sobre o projeto Queimada Zero?</label>
-    </div>
-
-
-    <input type="submit" value="Enviar" id="enviar" aria-label="Enviar formulário de contato">
-    <div id="mensagem-sucesso" role="alert" aria-live="polite"></div>
   </form>
 
 
+
+</section>
 
 
 
