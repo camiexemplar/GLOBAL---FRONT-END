@@ -221,7 +221,7 @@ if (form) {
 const textarea = document.getElementById('mensagem');
 const contador = document.getElementById('contador');
 const aviso = document.getElementById('aviso-limite');
-const limite = 1501;
+const limite = 1500;
 
 textarea.addEventListener('input', () => {
   const tamanhoAtual = textarea.value.length;

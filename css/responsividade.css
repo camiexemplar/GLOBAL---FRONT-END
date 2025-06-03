@@ -376,5 +376,28 @@ textarea {
   flex: 1;
   min-width: 0;
 }
+
+#emailnewsletter::placeholder,
+#celularnewsletter::placeholder,
+#nomenewsletter::placeholder {
+  font-size: 18px;
+  color: #888;
+}
+.checkbox__newsletter input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+#atualizacoes-newsletter {
+  text-align: center;
+  text-align: center;
+  font-size: 1.875rem;
+}
+.checkbox__newsletter input[type="checkbox"] {
+  cursor: pointer;
+}
+.newsletter__pai input[type="submit"] {
+  cursor: pointer;
+}
+
 }
 

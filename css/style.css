@@ -442,7 +442,6 @@ textarea {
   background-color: var(--aqua)
 }
 
-/* Mantém a borda vermelha no foco quando tiver erro */
 .form-group.error input:focus,
 .form-group.error select:focus,
 .form-group.error textarea:focus {
@@ -465,12 +464,14 @@ a[id$="-erro"] {
   visibility: hidden;
 }
 
-
 /* página da newsletter */
+
 #atualizacoes-newsletter {
   text-align: center;
   font-size: 26px;
-  padding-bottom: 15px;
+  padding-top: 18px;
+  font-family: Poppins;
+  font-weight: 400;
 }
 
 .newsletter {
@@ -482,7 +483,7 @@ a[id$="-erro"] {
 
 .formularionewsletter {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -499,12 +500,12 @@ a[id$="-erro"] {
 .newsletter__pai input[type="tel"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid var(--aqua);
+  border: 1px solid var(--preto);
   background-color: transparent;
   border-radius: 5px;
 }
 
-/* Checkbox */
+
 #newsletterassine {
   text-align: start;
 }
@@ -516,13 +517,12 @@ a[id$="-erro"] {
 .checkbox__newsletter input[type="checkbox"] {
   width: 30px;
   height: 30px;
-  
-
+  cursor: pointer;
 }
+
 label[for="newsletterassine"] {
   font-size: 15px;
   margin-left: 6px;
-  cursor: pointer;
   user-select: none;
 }
 
@@ -530,9 +530,9 @@ label[for="newsletterassine"] {
 .newsletter__pai input[type="submit"] {
   background-color: #0d6d0d;
   color: white;
+  margin-top: 10px;
   padding: 10px;
   border: none;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -542,4 +542,23 @@ label[for="newsletterassine"] {
 
 .newsletter a {
   visibility: hidden;
+}
+#emailnewsletter::placeholder,
+#celularnewsletter::placeholder,
+#nomenewsletter::placeholder {
+  font-size: 15px;
+  color: #888;
+}
+/* Mensagens de erro da newsletter */
+.error-message {
+  color: rgb(121, 0, 0);
+  font-size: 14px;
+  margin-top: 4px;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formularionewsletter input:focus {
+  border: 2px solid red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
 }

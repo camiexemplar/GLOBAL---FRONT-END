@@ -43,44 +43,38 @@
           </section>
         </header>
 
+     <h2 id="atualizacoes-newsletter">Inscreva-se no boletim de ocorrências abaixo e receba localizações de queimadas próximas à sua casa! </h2>
 <section class="newsletter" aria-label="Formulário de contato">
-  <form class="formularionewsletter" id="form" novalidate>
-    <h2 id="atualizacoes-newsletter">Inscreva-se no boletim de ocorrências abaixo e receba localizações de queimadas próximas à sua casa! </h2>
+  <form class="formularionewsletter" id="formnewsletter" novalidate>
 
     <div class="newsletter__pai">
-      <label for="nome"></label>
-      <input type="text" id="nomenewsletter" placeholder="Digite seu nome!" aria-describedby="nome-erro" required>
-      <a id="nome-erro" role="alert" aria-live="assertive">Erro</a>
+      <label for="nomenewsletter">Digite seu nome!</label>
+      <input type="text" id="nomenewsletter" placeholder="seu nome" aria-describedby="nome-erro" required>
+      <span id="nome-erro" class="error-message" role="alert" aria-live="assertive"></span>
 
-<div class="email__numero">
-  <div class="campo">
-    <label for="email"></label>
-    <input type="email" id="emailnewsletter" placeholder="digite seu email!" aria-describedby="email-erro" required>
-    <a id="email-erro" role="alert" aria-live="assertive">Erro</a>
-  </div>
+      <div class="email__numero">
+        <div class="campo">
+          <label for="emailnewsletter">Digite seu email!</label>
+          <input type="email" id="emailnewsletter" placeholder="seu email" aria-describedby="email-erro" required>
+          <span id="email-erro" class="error-message" role="alert" aria-live="assertive"></span>
+        </div>
 
-  <div class="campo">
-    <label for="celular"></label>
-    <input type="tel" name="celular" id="celularnewsletter" placeholder="digite seu numero de celular!" aria-describedby="celular-erro" required>
-    <a id="celular-erro" role="alert" aria-live="assertive">Erro</a>
-  </div>
-</div>
+        <div class="campo">
+          <label for="celularnewsletter">Digite seu número de celular!</label>
+          <input type="tel" name="celular" id="celularnewsletter" placeholder="seu numero de celular" aria-describedby="celular-erro" required>
+          <span id="celular-erro" class="error-message" role="alert" aria-live="assertive"></span>
+        </div>
+      </div>
 
+      <div class="checkbox__newsletter">
+        <input type="checkbox" id="newsletterassine" name="newsletter" value="sim">
+        <label for="newsletterassine">Deseja receber novidades sobre queimadas e sobre o projeto Queimada Zero?</label>
+      </div>
 
-<div class="checkbox__newsletter">
-  <input type="checkbox" id="newsletterassine" name="newsletter" value="sim">
-  <label for="newsletterassine">Deseja receber novidades sobre queimadas e sobre o projeto Queimada Zero?</label>
-</div>
-
-      
-      
-      <input type="submit" value="Enviar" id="enviarnewsletter" aria-label="Enviar formulário de contato">
+      <input type="submit" value="Enviar" id="enviarnewsletter" aria-label="Enviar inscrição para newsletter">
       <div id="mensagem-sucesso" role="alert" aria-live="polite"></div>
     </div>
   </form>
-
-
-
 </section>
 
 
@@ -125,6 +119,6 @@
       <p><strong>Inovação que acessibiliza o conhecimento.</strong></p>
     </div>
   </footer>
-    <script src="script/script.js"></script>
+    <script src="script/newsletterscript.js"></script>
 </body>
 </html>
