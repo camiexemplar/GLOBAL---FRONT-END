@@ -285,15 +285,16 @@ textarea {
 
 
 /*página faq */
+
 .faq-tudo {
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 .faq-bloco {
-  max-width: 1000px;
+  margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 12px;
 }
-
 .faq-botao {
   font-size: 18px;
   padding: 20px;
