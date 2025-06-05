@@ -216,6 +216,11 @@ if (form) {
             telInput.value = `(${valor}`;
         }
     });
+    telInput.addEventListener("keypress", (e) => {
+  if (!/\d/.test(e.key)) {
+    e.preventDefault();
+  }
+});
 }
 //contador da textarea
 const textarea = document.getElementById('mensagem');
@@ -235,3 +240,6 @@ textarea.addEventListener('input', () => {
 
   contador.innerText = `${tamanhoAtual} / ${limite}`;
 });
+
+
+

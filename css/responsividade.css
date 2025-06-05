@@ -4,6 +4,7 @@
   font-size: 25px;
 }
 
+
 }
 @media (min-width: 768px){
 
@@ -366,17 +367,6 @@ textarea {
 
 /*projetos*/
 
-.email__numero {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.email__numero input {
-  flex: 1;
-  min-width: 0;
-}
-
 #emailnewsletter::placeholder,
 #celularnewsletter::placeholder,
 #nomenewsletter::placeholder {
@@ -399,9 +389,8 @@ textarea {
   cursor: pointer;
 }
 .email__numero {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
 }
 
 }

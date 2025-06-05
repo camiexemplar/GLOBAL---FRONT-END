@@ -465,29 +465,88 @@ a[id$="-erro"] {
 }
 
 /* página da newsletter */
-
+.blocoum__projeto {
+  color: var(--branco);
+  background-color: var(--aqua);
+  font-size: 1.2rem;
+  margin: 0px;
+  font-weight: 600;
+  padding: 50px;
+  text-align: left;
+}
+.oqueeprojeto {
+  font-size: 1.3rem;
+  margin: 0px;
+  font-weight: 450;
+  padding: 30px;
+  text-align: left;
+}
 .blocotexto__projeto {
+  color: var(--branco);
   background-color: var(--aqua);
   font-size: 1.2rem;
   margin: 0px;
   font-weight: 500;
-  padding: 50px;
+  padding: 30px;
+  text-align: left;
+}
+.blocotexto__projeto h3 {
+  font-family: var(--fonte-segundaria);
+  font-weight: 500;
   text-align: center;
 }
+
+.blocotexto__projeto p {
+  font-family: var(--fonte-segundaria);
+  font-weight: 400;
+  padding: 8px;
+  text-align: left;
+}
+
 .blocodois__projeto {
+  color: var(--branco);
   background-color: var(--aqua);
   font-size: 1.2rem;
   margin: 0px;
   font-weight: 500;
   padding: 50px;
+  text-align: left;
+}
+.blocodois__projeto h3 {
+  font-size: 25px;
+  padding: 8px;
   text-align: center;
+}
+.blocodois__projeto p {
+  font-family: var(--fonte-segundaria);
+  font-weight: 300;
 }
 .dicasdeprevencao {
   font-size: 1.2rem;
   margin: 0px;
   font-weight: 500;
   padding: 50px;
+  text-align: left;
+}
+.dicasdeprevencao {
+  font-size: 1.7rem;
+  padding: 10px;
+  margin: 20px auto;
   text-align: center;
+}
+.prevenir {
+  font-family: var(--fonte-segundaria);
+  font-weight: 500;
+  background-color: #fafffa57;
+  padding: 40px 30px;
+  margin: 6px 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--preto);
+  display: inline-block;
+  border: 2px solid #0000006e;
+  
 }
 
 #atualizacoes-newsletter {
@@ -628,4 +687,70 @@ label[for="newsletterassine"] {
 .direitos-footer {
     text-align: center;
     margin-bottom: 10px;
+}
+.graficoqueimadas {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.slidedemeses {
+  width: 450px;
+  height: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mesporslide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+  height: 100%;
+}
+/* Botões */
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  background-color: #036500;
+  border: 2px solid rgb(27, 109, 0);
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(131, 192, 131, 0.8);
+}
+
+button.prev {
+  left: 5px;
+}
+
+button.next {
+  right: 5px;
 }

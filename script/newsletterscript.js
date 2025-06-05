@@ -155,4 +155,37 @@ if (formNewsletter) {
             telInput.value = `(${valor}`;
         }
     });
+telInput.addEventListener("keypress", (e) => {
+  if (!/\d/.test(e.key)) {
+    e.preventDefault();
+  }
+});
 }
+
+
+//grafico
+
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelector('.mesporslide');
+  const totalSlides = document.querySelectorAll('.slide').length;
+
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  const slideWidth = document.querySelector('.slidedemeses').clientWidth;
+  slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+function autoSlide() {
+  moveSlide(1); // Avança slide
+}
+
+// intervalo imagens
+setInterval(autoSlide, 10000);
