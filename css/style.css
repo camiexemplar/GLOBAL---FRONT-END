@@ -85,8 +85,8 @@
 }
 /*imagem amazon*/
 .imgamazon-slideshow {
-  width: 120vw;
-  height: 70vw;
+  width: 100vw;
+  height: 50vw;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -464,43 +464,123 @@ a[id$="-erro"] {
   visibility: hidden;
 }
 
+
+
 /* página da newsletter */
-.blocoum__projeto {
-  color: var(--branco);
-  background-color: var(--aqua);
-  font-size: 1.2rem;
-  margin: 0px;
-  font-weight: 600;
-  padding: 50px;
-  text-align: left;
+.layout-projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.oqueeprojeto {
-  font-size: 1.3rem;
-  margin: 0px;
-  font-weight: 450;
-  padding: 30px;
+.blocoum__projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--aqua);
+  color: var(--branco);
+  padding: 15px;
+}
+
+.blocoum__projeto h3 {
+  order: 0;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  margin-bottom: 3px;
+  text-align: center;
+}
+.blocoum__projeto p {
+  font-family: var(--fonte-primaria);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 10px;
   text-align: left;
 }
 .blocotexto__projeto {
-  color: var(--branco);
-  background-color: var(--aqua);
-  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.blocotexto__projeto {
+  order: 1;
+}
+
+.graficoqueimadas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slidedemeses {
+  width: 450px;
+  height: 280px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.mesporslide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+/* Botões */
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  background-color: #036500;
+  border: 2px solid rgb(27, 109, 0);
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button.prev {
+  left: 5px;
+}
+
+button.next {
+  right: 5px;
+}
+
+.blocotexto__projeto {
   margin: 0px;
   font-weight: 500;
-  padding: 30px;
-  text-align: left;
+  padding-top: 15px;
 }
 .blocotexto__projeto h3 {
+    font-size: 2.0rem;
   font-family: var(--fonte-segundaria);
   font-weight: 500;
   text-align: center;
-}
-
-.blocotexto__projeto p {
-  font-family: var(--fonte-segundaria);
-  font-weight: 400;
-  padding: 8px;
-  text-align: left;
 }
 
 .blocodois__projeto {
@@ -516,44 +596,16 @@ a[id$="-erro"] {
   font-size: 25px;
   padding: 8px;
   text-align: center;
+  
 }
 .blocodois__projeto p {
   font-family: var(--fonte-segundaria);
   font-weight: 300;
 }
-.dicasdeprevencao {
-  font-size: 1.2rem;
-  margin: 0px;
-  font-weight: 500;
-  padding: 50px;
-  text-align: left;
-}
-.dicasdeprevencao {
-  font-size: 1.7rem;
-  padding: 10px;
-  margin: 20px auto;
-  text-align: center;
-}
-.prevenir {
-  font-family: var(--fonte-segundaria);
-  font-weight: 500;
-  background-color: #fafffa57;
-  padding: 40px 30px;
-  margin: 6px 10px;
-  border-radius: 10px;
-  font-size: 1.4rem;
-  text-decoration: none;
-  color: var(--preto);
-  display: inline-block;
-  border: 2px solid #0000006e;
-  
-}
-
 #atualizacoes-newsletter {
   text-align: center;
-  font-size: 26px;
-  padding-top: 18px;
-  font-family: Poppins;
+  font-size: 1.4rem;
+  padding: 8px;
   font-weight: 400;
 }
 
@@ -561,7 +613,6 @@ a[id$="-erro"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .formularionewsletter {
@@ -635,9 +686,10 @@ label[for="newsletterassine"] {
 #emailnewsletter::placeholder,
 #celularnewsletter::placeholder,
 #nomenewsletter::placeholder {
-  font-size: 12px;
+  font-size: 20px;
   color: #888;
 }
+
 /* Mensagens de erro da newsletter */
 .error-message {
   color: rgb(121, 0, 0);
@@ -650,6 +702,33 @@ label[for="newsletterassine"] {
 .formularionewsletter input:focus {
   border: 2px solid red;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+.dicasdeprevencao {
+  font-size: 1.2rem;
+  margin: 0px;
+  font-weight: 500;
+  padding: 50px;
+  text-align: left;
+}
+.dicasdeprevencao {
+  font-size: 1.7rem;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+.prevenir {
+  font-family: var(--fonte-segundaria);
+  font-weight: 500;
+  background-color: #fafffa57;
+  padding: 40px 30px;
+  margin: 6px 10px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--preto);
+  display: inline-block;
+  border: 2px solid #0000006e;
+  
 }
 
 
@@ -688,69 +767,4 @@ label[for="newsletterassine"] {
     text-align: center;
     margin-bottom: 10px;
 }
-.graficoqueimadas {
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-}
-.slidedemeses {
-  width: 450px;
-  height: 280px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  margin: 20px auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
-.mesporslide {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: contain;
-  height: 100%;
-}
-/* Botões */
-button.prev,
-button.next {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 40px;
-  transform: translateY(-50%);
-  color: rgb(255, 255, 255);
-  background-color: #036500;
-  border: 2px solid rgb(27, 109, 0);
-  border-radius: 15px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-button.prev:hover,
-button.next:hover {
-  background-color: rgba(131, 192, 131, 0.8);
-}
-
-button.prev {
-  left: 5px;
-}
-
-button.next {
-  right: 5px;
-}

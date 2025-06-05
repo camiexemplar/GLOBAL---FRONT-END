@@ -148,6 +148,43 @@ textarea {
 }
 
 
+/*texto gafico*/
+
+.slidedemeses {
+  width: 600px;
+  height: auto;
+}
+.blocoum__projeto h3 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.blocoum__projeto p {
+  font-family: var(--fonte-primaria);
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 12px;
+  text-align: left;
+}
+.blocotexto__projeto h3 {
+    font-size: 2.6rem;
+}
+.blocodois__projeto h3 {
+  font-size: 2.4rem;
+}
+.blocodois__projeto p {
+  font-size: 1.8rem;
+}
+.dicasdeprevencao {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.prevenir {
+  margin: 10px auto;
+  width: 80%;
+}
+
+  
 @media (min-width: 992px) {
 
   /*imagems*/
@@ -351,20 +388,6 @@ textarea {
   padding: 0;
   margin: 0 auto;
 }
-}
-
-
-@media (hover: hover) {
-  .faq-botao:hover {
-    background-color: #0b8d3286;
-  }
-.membros .github:hover,
-.membros .linkedin:hover {
-  text-decoration: underline;
-  color: #1f3d1b;
-}
-
-
 /*projetos*/
 
 #emailnewsletter::placeholder,
@@ -389,8 +412,88 @@ textarea {
   cursor: pointer;
 }
 .email__numero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+/*texto gafico*/
+
+.blocoum__projeto h3 {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+.blocoum__projeto p {
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+.layout-projeto {
     flex-direction: row;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .graficoqueimadas {
+    padding: 0;
+  }
+
+  .blocotexto__projeto p {
+    display: flex;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 60px;
+    text-align: left;
+  }
+  .slidedemeses {
+    width: 700px;
+    height: 450px;
+  }
+
+  .graficoqueimadas {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .blocotexto__projeto {
+    padding-left: 10px;
+  }
+.dicasdeprevencao {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.prevenir {
+  margin: 15px auto;
+  width: 40%;
+  height: auto;
+}
+}
+
+
+
+
+
+
+
+
+
+@media (hover: hover) {
+  .faq-botao:hover {
+    background-color: #0b8d3286;
+  }
+.membros .github:hover,
+.membros .linkedin:hover {
+  text-decoration: underline;
+  color: #1f3d1b;
+}
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(131, 192, 131, 0.8);
 }
 
 }
