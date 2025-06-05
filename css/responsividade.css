@@ -1,11 +1,15 @@
-@media (max-width: 768px) {
+/* == Mobile Styles (max-width: 767px) == */
+
+
+@media (max-width: 767px) {
 
   .titulo-main {
   font-size: 25px;
 }
-
-
 }
+
+/* == Tablet Styles (min-width: 768px) == */
+
 @media (min-width: 768px){
 
 /*imagem amazon*/
@@ -19,15 +23,14 @@
 
 /*página faq */
 .faq-tudo {
-  margin: 0 auto;
-  padding: 40px 20px;
-
-
+  margin: 10px auto;
 }
 .faq-bloco {
-  margin: 0 auto;
-  max-width: 1250px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  border-radius: 12px;
 }
+
 .faq-botao {
   font-size: 18px;
   padding: 20px;
@@ -101,7 +104,7 @@ textarea {
     justify-content: center;
     gap: 40px;
     border-radius: 0;
-    width: 100vw;
+    width: 100%;
     padding: 50px 80px;
   }
 
@@ -171,6 +174,8 @@ textarea {
   width: 80%;
 }
 
+
+/* == Desktop Styles (min-width: 1080px) == */
   
 @media (min-width: 1080px) {
 
@@ -281,14 +286,14 @@ textarea {
 
 /*página faq */
 .faq-tudo {
-  margin: 0 auto;
-  padding: 40px 20px;
-
+  margin: 10px auto;
 }
 .faq-bloco {
-  margin: 0 auto;
   max-width: 1000px;
+  margin-bottom: 20px;
+  border-radius: 12px;
 }
+
 .faq-botao {
   font-size: 18px;
   padding: 20px;
@@ -339,7 +344,7 @@ textarea {
     justify-content: center;
     gap: 40px;
     border-radius: 0;
-    width: 99.2vw;
+    width: 100%;
     padding: 50px 80px;
   }
 
@@ -443,6 +448,8 @@ textarea {
 .slidedemeses {
   max-width: 700px;
   max-height: 450px;
+}
+
   .blocotexto__projeto {
     padding-left: 10px;
 }
@@ -456,12 +463,6 @@ textarea {
   height: auto;
 }
 }
-}
-
-
-
-
-
 
 
 @media (hover: hover) {
