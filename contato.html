@@ -1,117 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsividade.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsividade.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>CONTATO</title>
 </head>
 <body>
   <header>
-          <section class="menu-global">
-          <div class="contain">
-          <div>
-            <h2 class="logo">CGL</h2>
-            </div>
-            <div class="navigation">
-              <div class="hamb">
-                <input type="checkbox" id="menuhamb" class="container__botao">
-                <label for="menuhamb">
-                <span class="hamburguer"></span>
-                <img src="/img/Hamburger_icon.svg.png" alt="Menu do site">
-              </label>
-                      <ul class="lista-hamb">
-                <li class="categorias">Categorias</li>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto </a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-               <li><a href="contato.html">Contato</a></li>
-               </ul>
-              </div>
-            </div>
-            </div>
-            <div class="imgamazon-slideshow">
-            <div class="imgamazon">
-              <h2 class="titulo-main">Global Solution</h2>
-            </div>
-            </div>
-          </section>
-        </header>
+    <section class="menu-global">
+      <div class="contain">
+        <div>
+          <h2 class="logo">CGL</h2>
+        </div>
+        <div class="navigation">
+          <div class="hamb">
+            <input type="checkbox" id="menuhamb" class="container__botao" />
+            <label for="menuhamb">
+              <span class="hamburguer"></span>
+              <img src="/img/Hamburger_icon.svg.png" alt="Menu do site" />
+            </label>
+            <ul class="lista-hamb">
+              <li class="categorias">Categorias</li>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="projeto.html">Projeto</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="imgamazon-slideshow">
+        <div class="imgamazon">
+          <h2 class="titulo-main">Global Solution</h2>
+        </div>
+      </div>
     </section>
+  </header>
 
-<section class="faleconosco" aria-label="Formulário de contato">
-  <h2 id="contatoh2">Fale com a gente! </h2>
-  <p id="preencha-p">Preencha o formulário abaixo e logo você será respondido: </p>
-  <form class="formulario" id="form" novalidate>
+  <section class="faleconosco" aria-label="Formulário de contato">
+    <h2 id="contatoh2">Fale com a gente!</h2>
+    <p id="preencha-p">Preencha o formulário abaixo e logo você será respondido:</p>
+    <form class="formulario" id="form" novalidate>
+      <div class="form-group">
+        <label for="nome" class="sr-only">Nome completo</label>
+        <input
+          type="text"
+          id="nome"
+          placeholder="Digite seu nome completo!"
+          aria-describedby="nome-erro"
+          required
+        />
+        <span id="nome-erro" role="alert" aria-live="assertive" class="error-message"></span>
+      </div>
 
-    <div class="form-group">
-      <label for="nome"></label>
-      <input type="text" id="nome" placeholder="Digite seu nome completo!" aria-describedby="nome-erro" required>
-      <a id="nome-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
+      <div class="form-group">
+        <label for="email" class="sr-only">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu email!"
+          aria-describedby="email-erro"
+          required
+        />
+        <span id="email-erro" role="alert" aria-live="assertive" class="error-message"></span>
+      </div>
 
-    <div class="form-group">
-      <label for="email"></label>
-      <input type="email" id="email" placeholder="digite seu email!" aria-describedby="email-erro" required>
-      <a id="email-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
+      <div class="form-group">
+        <label for="celular" class="sr-only">Número de celular</label>
+        <input
+          type="tel"
+          name="celular"
+          id="celular"
+          placeholder="Digite seu número de celular!"
+          aria-describedby="celular-erro"
+          required
+        />
+        <span id="celular-erro" role="alert" aria-live="assertive" class="error-message"></span>
+      </div>
 
-    <div class="form-group">
-      <label for="celular"></label>
-      <input type="tel" name="celular" id="celular" placeholder="digite seu numero de celular!" aria-describedby="celular-erro" required>
-      <a id="celular-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
-        <div class="form-group">
-      <label for="motivo" id="label-motivo" alt="selecione o motivo de contato"></label>
-      <select name="motivo" id="motivo" aria-describedby="motivo" required>
-         <option value="" disabled selected>Selecione o motivo do contato: </option>
-         <option value="duvidas">Dúvidas</option>
-         <option value="reclamações">Reclamação</option>
-         <option value="feedback">Feedback ou sugestão</option>
-         <option value="outros">Outros</option>
-      </select>
-      <a id="motivo-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
+      <div class="form-group">
+        <label for="motivo" id="label-motivo">Selecione o motivo do contato:</label>
+        <select name="motivo" id="motivo" aria-describedby="motivo-erro" required>
+          <option value="" disabled selected>Selecione o motivo do contato:</option>
+          <option value="duvidas">Dúvidas</option>
+          <option value="reclamacoes">Reclamação</option>
+          <option value="feedback">Feedback ou sugestão</option>
+          <option value="outros">Outros</option>
+        </select>
+        <span id="motivo-erro" role="alert" aria-live="assertive" class="error-message"></span>
+      </div>
 
-    
-    
-    <div class="form-group">
-      <label for="mensagem">Digite sua mensagem para nós! </label>
-      <textarea name="mensagem" id="mensagem" rows="6" cols="25" max-length="1000" aria-describedby="mensagem-erro" required></textarea>
-      <p id="aviso-limite" style="display: none; color: red; font-size: 0.9rem;">
-        Você atingiu o limite de caracteres!
-      </p>
-      <div id="contador">0 / 1500</div>
-      <a id="mensagem-erro" role="alert" aria-live="assertive">Erro</a>
-    </div>
+      <div class="form-group">
+        <label for="mensagem">Digite sua mensagem para nós!</label>
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          rows="6"
+          cols="25"
+          maxlength="1500"
+          aria-describedby="mensagem-erro aviso-limite"
+          required
+        ></textarea>
+        <p id="aviso-limite" style="display: none; color: red; font-size: 0.9rem;">
+          Você atingiu o limite de caracteres!
+        </p>
+        <div id="contador">0 / 1500</div>
+        <span id="mensagem-erro" role="alert" aria-live="assertive" class="error-message"></span>
+      </div>
 
-    <div class="form-group">
-  <label for="arquivo">Anexar documento ou foto:</label>
-  <input type="file" id="arquivo" name="arquivo" accept=".jpg, .jpeg, .png, .pdf">
-</div>
-    
-    <input type="submit" value="Enviar" id="enviar" aria-label="Enviar formulário de contato">
-    <div id="mensagem-sucesso" role="alert" aria-live="polite">Mensagem enviada com sucesso!</div>
+      <div class="form-group">
+        <label for="arquivo">Anexar documento ou foto:</label>
+        <input
+          type="file"
+          id="arquivo"
+          name="arquivo"
+          accept=".jpg, .jpeg, .png, .pdf"
+          aria-describedby="arquivo-erro"
+        />
+        <span id="arquivo-erro" role="alert" aria-live="assertive" class="error-message"></span>
+      </div>
 
-  </form>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
+      <input
+        type="submit"
+        value="Enviar"
+        id="enviar"
+        aria-label="Enviar formulário de contato"
+      />
+      <div id="mensagem-sucesso" role="alert" aria-live="polite">
+        Mensagem enviada com sucesso!
+      </div>
+    </form>
+  </section>
 
   <footer class="footer">
     <div class="container-footer">
@@ -119,7 +147,7 @@
         <h3>Links Rápidos</h3>
         <ul class="ul-footer">
           <li><a href="index.html">Início</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="projeto.html">Projetos</a></li>
           <li><a href="integrantes.html">Sobre Nós</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contato.html">Contato</a></li>
@@ -139,6 +167,6 @@
       <p><strong>Inovação que acessibiliza o conhecimento.</strong></p>
     </div>
   </footer>
-    <script src="script/script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 </html>

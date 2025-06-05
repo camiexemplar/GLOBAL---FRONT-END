@@ -1,142 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsividade.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsividade.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>INTEGRANTES</title>
 </head>
 <body>
   <header>
-          <section class="menu-global">
-          <div class="contain">
-          <div>
-            <h2 class="logo">CGL</h2>
-            </div>
-            <div class="navigation">
-              <div class="hamb">
-                <input type="checkbox" id="menuhamb" class="container__botao">
-                <label for="menuhamb">
-                <span class="hamburguer"></span>
-                <img src="/img/Hamburger_icon.svg.png" alt="Menu do site">
-              </label>
-                      <ul class="lista-hamb">
-                <li class="categorias">Categorias</li>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto </a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-               <li><a href="contato.html">Contato</a></li>
-               </ul>
-              </div>
-            </div>
-            </div>
-            <div class="imgamazon-slideshow">
-            <div class="imgamazon">
-              <h2 class="titulo-main">Global Solution</h2>
-            </div>
-            </div>
+    <nav class="menu-global" aria-label="Menu principal">
+      <div class="contain">
+        <div>
+          <h1 class="logo">CGL</h1>
+        </div>
+        <div class="navigation">
+          <div class="hamb">
+            <input
+              type="checkbox"
+              id="menuhamb"
+              class="container__botao"
+              aria-controls="menu-principal"
+              aria-expanded="false"
+              aria-label="Abrir e fechar menu principal"
+            />
+            <label for="menuhamb" tabindex="0" role="button" aria-pressed="false">
+              <span class="hamburguer" aria-hidden="true"></span>
+              <img
+                src="/img/Hamburger_icon.svg.png"
+                alt="Ícone do menu do site"
+                aria-hidden="true"
+              />
+            </label>
+            <ul class="lista-hamb" id="menu-principal" role="menu" aria-label="Categorias do site">
+              <li class="categorias" role="presentation">Categorias</li>
+              <li role="none"><a href="index.html" role="menuitem">Início</a></li>
+              <li role="none"><a href="projeto.html" role="menuitem">Projeto</a></li>
+              <li role="none"><a href="faq.html" role="menuitem">FAQ</a></li>
+              <li role="none"><a href="integrantes.html" role="menuitem">Integrantes</a></li>
+              <li role="none"><a href="contato.html" role="menuitem">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="imgamazon-slideshow">
+        <div class="imgamazon">
+          <h2 class="titulo-main">Global Solution</h2>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-          </section>
-        </header>
-
-  <section class="tudosobre">
-    <div class="quemsomosnos">
-      <span class="centraliza"><strong>Quem somos?</strong></span>
+  <main class="tudosobre">
+    <section class="quemsomosnos">
+      <h2 class="centraliza">Quem somos?</h2>
       <p class="textosomos">
-        Somos estudantes de Análise e Desenvolvimento de Sistemas na Faculdade de Informática e Administração Paulista(FIAP) 
+        Somos estudantes de Análise e Desenvolvimento de Sistemas na Faculdade de Informática e Administração Paulista (FIAP)
         e estamos desenvolvendo um projeto para a Global Solution focado em eventos extremos da natureza.
       </p>
-    </div>
+    </section>
 
-  <div class="objetivoprojeto">
-    <span class="centraliza"><strong>Qual o objetivo?</strong></span>
-    <p>
-      O projeto Queimada Zero visa mitigar a vulnerabilidade de pequenos agricultores da Amazônia a 
-      eventos climáticos extremos como secas e queimadas, que estão diretamente ligadas ao desmatamento e afetam a segurança 
-      alimentar e a produtividade agrícola. A solução busca fornecer alertas hiperlocais de focos de calor via SMS/WhatsApp,
-       suprindo a falta de acesso a sistemas de monitoramento em tempo real nessas comunidades. Além disso, o projeto 
-       reforça a importância da integração comunitária, permitindo o compartilhamento de alertas e oferecendo informações 
-       acessíveis via chatbot para prevenção de queimadas e ações emergenciais. A proposta se baseia na necessidade de 
-       soluções simples, gratuitas e  inclusivas para fortalecer a capacidade de adaptação dos agricultores e proteger 
-       seus meios de subsistência.
+    <section class="objetivoprojeto">
+      <h2 class="centraliza">Qual o objetivo?</h2>
+      <p>
+        O projeto Queimada Zero visa mitigar a vulnerabilidade de pequenos agricultores da Amazônia a
+        eventos climáticos extremos como secas e queimadas, que estão diretamente ligadas ao desmatamento e afetam a segurança
+        alimentar e a produtividade agrícola. A solução busca fornecer alertas hiperlocais de focos de calor via SMS/WhatsApp,
+        suprindo a falta de acesso a sistemas de monitoramento em tempo real nessas comunidades. Além disso, o projeto
+        reforça a importância da integração comunitária, permitindo o compartilhamento de alertas e oferecendo informações
+        acessíveis via chatbot para prevenção de queimadas e ações emergenciais. A proposta se baseia na necessidade de
+        soluções simples, gratuitas e inclusivas para fortalecer a capacidade de adaptação dos agricultores e proteger
+        seus meios de subsistência.
+      </p>
+    </section>
 
-    </p>
-  </div>
+    <section class="integrantes" aria-label="Informações dos integrantes">
+      <h2 class="centraliza">Integrantes</h2>
+      <h3 id="turma">TURMA 1TDSPX-2025</h3>
 
+      <article class="membros" role="group" aria-labelledby="nome-camily">
+        <img src="img/camily.jpg" alt="Foto da Camily Vitoria Pereira Maciel" id="camily" />
+        <p id="nome-camily" class="nome">Camily Vitoria Pereira Maciel</p>
+        <p class="rm">RM: 566520</p>
+        <a href="https://github.com/camiexemplar/" class="github" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="https://www.linkedin.com/in/camilyvpmaciel/" class="linkedin" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+      </article>
 
-   <div class="integrantes">
-  <span class="centraliza"><strong>Integrantes</strong></span>
-  <h4 id="turma">TURMA 1TDSPX-2025</h4>
+      <article class="membros" role="group" aria-labelledby="nome-lucas">
+        <img src="img/lucas.jpeg" alt="Foto do Lucas Nunes Soares" id="lucas" />
+        <p id="nome-lucas" class="nome">Lucas Nunes Soares</p>
+        <p class="rm">RM: 566503</p>
+        <a href="https://github.com/Hayzer3" class="github" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="https://www.linkedin.com/in/lucas-nunes-a7995a261/" class="linkedin" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+      </article>
 
-  <div class="membros">
-    <div class="info">
-      <img src="img/camily.jpg" alt="Foto de Camily" id="camily" />
-      <p class="nome">Camily Vitoria Pereira Maciel</p>
-      <p class="rm">RM: 566520</p>
-      <a href="https://github.com/camiexemplar/" class="github">GITHUB</a>
-      <a href="https://www.linkedin.com/in/camilyvpmaciel/" class="linkedin">LINKEDIN</a>
-    </div>
-  </div>
+      <article class="membros" role="group" aria-labelledby="nome-gustavo">
+        <img src="img/gustavo.jpg" alt="Foto do Gustavo Pinheiro de Oliveira" id="gustavo" />
+        <p id="nome-gustavo" class="nome">Gustavo Pinheiro de Oliveira</p>
+        <p class="rm">RM: 566358</p>
+        <a href="https://github.com/mrpine19" class="github" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="https://www.linkedin.com/in/gustavo-pinheiro-de-oliveira-0165281b5/" class="linkedin" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+      </article>
+    </section>
+  </main>
 
-  <div class="membros">
-    <div class="info">
-    <img src="img/lucas.jpeg" alt="Foto de Lucas" id="lucas" />
-      <p class="nome">Lucas Nunes Soares</p>
-      <p class="rm">RM: 566503</p>
-      <a href="https://github.com/Hayzer3" class="github">GITHUB</a>
-      <a href="https://www.linkedin.com/in/lucas-nunes-a7995a261/" class="linkedin">LINKEDIN</a>
-    </div>
-  </div>
-
-  <div class="membros">
-    <div class="info">
-      <img src="img/gustavo.jpg" alt="Foto de Gustavo" id="gustavo" />
-      <p class="nome">Gustavo Pinheiro de Oliveira</p>
-      <p class="rm">RM: 566358</p>
-      <a href="https://github.com/mrpine19" class="github">GITHUB</a>
-      <a href="https://www.linkedin.com/in/gustavo-pinheiro-de-oliveira-0165281b5/" class="linkedin">LINKEDIN</a>
-    </div>
-  </div>
-  </div>
-
-
-
-  </section>
-
-
-      <footer class="footer">
-        <section class="footer-integrantes">
-    <div class="container-footer">
-      <div class="links-footer">
-        <h3>Links Rápidos</h3>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="integrantes.html">Sobre Nós</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
+  <footer class="footer">
+    <section class="footer-integrantes">
+      <div class="container-footer">
+        <div class="links-footer">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projeto.html">Projetos</a></li>
+            <li><a href="integrantes.html">Sobre Nós</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="contato-footer">
+          <h3>Contato</h3>
+          <address>
+            <p>Av. Paulista, 1106 - Bela Vista, São Paulo - SP, 01311-000</p>
+            <p>Telefone: (11) 3385-8010</p>
+          </address>
+        </div>
       </div>
-      <div class="contato-footer">
-        <h3>Contato</h3>
-        <address>
-          <p>Av. Paulista, 1106 - Bela Vista, São Paulo - SP, 01311-000</p>
-          <p>Telefone: (11) 3385-8010</p>
-        </address>
+      <div class="direitos-footer">
+        <p>© 2025 CGL. Todos os direitos reservados.</p>
+        <p>Desenvolvido por CGL Queimada Zero</p>
+        <p><strong>Inovação que acessibiliza o conhecimento</strong></p>
       </div>
-    </div>
-    <div class="direitos-footer">
-      <p>© 2025 CGL. Todos os direitos reservados.</p>
-      <p>Desenvolvido por CGL Queimada Zero</p>
-      <p>Inovação que acessibiliza o conhecimento</p>
-    </div>
     </section>
   </footer>
-    <script src="script/script.js"></script>
+
+  <script src="script/script.js"></script>
 </body>
 </html>

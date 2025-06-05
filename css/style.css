@@ -184,13 +184,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   margin: 0 auto;
   gap: 20px;
   padding: 20px;
 }
 
 .quemsomosnos {
+  color: var(--branco);
   background-color: var(--aqua);
   font-size: 1.2rem;
   margin: 10px;
@@ -200,7 +200,6 @@
 }
 
 .objetivoprojeto {
-  background: rgba(255, 255, 255, 0.239);
   font-size: 1.2rem;
   margin: 10px;
   font-weight: 500;
@@ -215,8 +214,10 @@
   width: 100%;
   box-sizing: border-box;
   background-color: var(--aqua);
+  color: var(--branco);
 }
 .membros {
+  color: var(--preto);
   border-radius: 20px;
   width: 300px;
   padding: 20px;
@@ -586,14 +587,13 @@ button.next {
 .blocodois__projeto {
   color: var(--branco);
   background-color: var(--aqua);
-  font-size: 1.2rem;
   margin: 0px;
   font-weight: 500;
   padding: 50px;
   text-align: left;
 }
 .blocodois__projeto h3 {
-  font-size: 25px;
+  font-size: 1.6rem;
   padding: 8px;
   text-align: center;
   
@@ -601,6 +601,7 @@ button.next {
 .blocodois__projeto p {
   font-family: var(--fonte-segundaria);
   font-weight: 300;
+  font-size: 1.5rem;
 }
 #atualizacoes-newsletter {
   text-align: center;
@@ -711,7 +712,7 @@ label[for="newsletterassine"] {
   text-align: left;
 }
 .dicasdeprevencao {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   padding: 10px;
   margin: 20px auto;
   text-align: center;
@@ -719,6 +720,7 @@ label[for="newsletterassine"] {
 .prevenir {
   font-family: var(--fonte-segundaria);
   font-weight: 500;
+  max-width: 600px;
   background-color: #fafffa57;
   padding: 40px 30px;
   margin: 6px 10px;
@@ -731,6 +733,20 @@ label[for="newsletterassine"] {
   
 }
 
+
+/*arrumando coisas*/
+
+      /* Esconder labels visualmente sem perder acessibilidade */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
 
 
 /* Footer */

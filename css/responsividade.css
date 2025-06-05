@@ -9,10 +9,6 @@
 @media (min-width: 768px){
 
 /*imagem amazon*/
-.imgamazon-slideshow {
-  width: 120vw;
-  height: 40vw;
-}
 
 .titulo-main {
   font-size: 40px;
@@ -71,7 +67,7 @@
 
 .formulario {
   font-size: 20px;
-  width: 100vw;
+  width: 80vw;
 }
 input,
 select,
@@ -90,19 +86,13 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
     border-radius: 0;
-    width: 100vw;
     margin: 0;
-    padding: 50px 80px;
-    font-size: 24px;
+    padding: 50px;
+    font-size: 1.4rem;
 }
 .objetivoprojeto {
-  font-size: 24px;
-}
-.textosomos {
-  padding-left: 100px;
-  padding-right: 100px;
+  font-size: 1.4rem;
 }
 
 .integrantes {
@@ -111,7 +101,7 @@ textarea {
     justify-content: center;
     gap: 40px;
     border-radius: 0;
-    width: 120vw;
+    width: 100vw;
     padding: 50px 80px;
   }
 
@@ -155,25 +145,22 @@ textarea {
   height: auto;
 }
 .blocoum__projeto h3 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
 }
 .blocoum__projeto p {
   font-family: var(--fonte-primaria);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   padding: 12px;
   text-align: left;
 }
 .blocotexto__projeto h3 {
-    font-size: 2.6rem;
-}
-.blocodois__projeto h3 {
-  font-size: 2.4rem;
+    font-size: 2.2rem;
 }
 .blocodois__projeto p {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 .dicasdeprevencao {
   box-sizing: border-box;
@@ -185,12 +172,12 @@ textarea {
 }
 
   
-@media (min-width: 992px) {
+@media (min-width: 1080px) {
 
   /*imagems*/
 .imgamazon-slideshow {
   width: 100%;
-  height: 30vw;
+  height: 32vw;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -337,10 +324,8 @@ textarea {
     justify-content: center;
     gap: 40px;
     border-radius: 0;
-    width: 100vw;
     margin: 0;
     padding: 50px 80px;
-
     text-align: center;
 }
 .textosomos {
@@ -354,7 +339,7 @@ textarea {
     justify-content: center;
     gap: 40px;
     border-radius: 0;
-    width: 120vw;
+    width: 99.2vw;
     padding: 50px 80px;
   }
 
@@ -421,7 +406,7 @@ textarea {
 /*texto gafico*/
 
 .blocoum__projeto h3 {
-  font-size: 30px;
+  font-size: 2.4rem;
   padding: 0;
   margin: 0;
 }
@@ -429,7 +414,7 @@ textarea {
   padding: 0;
   align-items: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 .layout-projeto {
     flex-direction: row;
@@ -437,14 +422,9 @@ textarea {
     justify-content: space-between;
     gap: 0;
   }
-
-  .graficoqueimadas {
-    padding: 0;
-  }
-
   .blocotexto__projeto p {
     display: flex;
-    font-size: 20px;
+    font-size: 1.4rem;
     padding-left: 30px;
     padding-right: 60px;
     text-align: left;
@@ -460,9 +440,12 @@ textarea {
     justify-content: center;
   }
 
+.slidedemeses {
+  max-width: 700px;
+  max-height: 450px;
   .blocotexto__projeto {
     padding-left: 10px;
-  }
+}
 .dicasdeprevencao {
   box-sizing: border-box;
   margin: 0 auto;
@@ -473,8 +456,7 @@ textarea {
   height: auto;
 }
 }
-
-
+}
 
 
 

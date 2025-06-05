@@ -1,81 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsividade.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>HOME</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsividade.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <title>HOME</title>
+
+  <style>
+    /* Classe para conteúdo acessível só para leitores de tela */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
-          <section class="menu-global">
-          <div class="contain">
-          <div>
-            <h2 class="logo">CGL</h2>
-            </div>
-            <div class="navigation">
-              <div class="hamb">
-                <input type="checkbox" id="menuhamb" class="container__botao">
-                <label for="menuhamb">
-                <span class="hamburguer"></span>
-                <img src="/img/Hamburger_icon.svg.png" alt="Menu do site">
-              </label>
-                      <ul class="lista-hamb">
-                <li class="categorias">Categorias</li>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto </a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-               <li><a href="contato.html">Contato</a></li>
-               </ul>
-              </div>
-            </div>
-            </div>
-            <div class="imgamazon-slideshow">
-            <div class="imgamazon">
-              <h2 class="titulo-main">Global Solution</h2>
-            </div>
-            </div>
+    <section class="menu-global">
+      <div class="contain">
+        <div>
+          <h1 class="logo">CGL</h1>
+        </div>
+        <nav class="navigation" aria-label="Menu principal">
+          <div class="hamb">
+            <input type="checkbox" id="menuhamb" class="container__botao" />
+            <label for="menuhamb">
+              <span class="hamburguer"></span>
+              <img src="/img/Hamburger_icon.svg.png" alt="Menu do site" />
+            </label>
+            <ul class="lista-hamb">
+              <li class="categorias">Categorias</li>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="projeto.html">Projeto</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-          </section>
-        </header>
+      <div class="imgamazon-slideshow" role="img" aria-label="Imagem da floresta amazônica">
+        <div class="imgamazon">
+          <h2 class="titulo-main">Global Solution</h2>
+        </div>
+      </div>
+    </section>
+  </header>
 
-      <div class="infohome">
-              <p> Pequenos agricultores da Amazônia perdem tudo em segundos por causa de queimadas e eventos climáticos extremos.
-Falta de informação, infraestrutura precária e pouca assistência tornam essas comunidades ainda mais vulneráveis.
-Mas e se fosse possível prevenir esses desastres com um simples alerta no celular?</p>
-                    
-<div class="botaohome">
-  <a href="projeto.html" class="botao-saiba">Saiba mais!</a>
-</div>
-</div>
-                  
+  <main>
+    <section class="infohome" aria-labelledby="intro-title">
+      <h2 id="intro-title" class="sr-only">Introdução ao Queimada Zero</h2>
+      <p>
+        Pequenos agricultores da Amazônia perdem tudo em segundos por causa de queimadas e eventos climáticos extremos. Falta de informação,
+        infraestrutura precária e pouca assistência tornam essas comunidades ainda mais vulneráveis. Mas e se fosse possível prevenir esses desastres
+        com um simples alerta no celular?
+      </p>
 
+      <div class="botaohome">
+        <a href="projeto.html" class="botao-saiba" aria-label="Saiba mais sobre o projeto Queimada Zero">Saiba mais!</a>
+      </div>
+    </section>
 
-            <div class="dadoshome">
-              <h2>Você sabia?</h2>
-              <div class="numdados">
-                <p>O QueimaZero é uma solução baseada em evidências científicas e nas necessidades reais de pequenos produtores da Amazônia brasileira.</p>
-              </div>
-            </div>
-            <div class="dadosagricultor">
-              <p>Pequenos agricultores representam 72% dos produtores rurais na Amazônia. Eles são a base da economia local e essenciais para a segurança alimentar da região, produzindo a maior parte dos alimentos consumidos.</p>
-              <p>Comunidades tradicionais têm estratégias adaptativas, como o profundo conhecimento local de rios, florestas e ciclos naturais. No entanto, essas práticas, estão se mostrando insuficientes para lidar com a intensificação dos eventos climáticos extremos.</p>
-              <p>Queimadas e secas estão diretamente ligadas ao desmatamento e à
-degradação florestal, afetando a produtividade agrícola e a segurança
-alimentar. Além disso, as queimadas empobrecem o solo e agravam as mudanças climáticas extremas.</p>
-            </div>
-      <footer class="footer">
+    <section class="dadoshome" aria-labelledby="dados-title">
+      <h2 id="dados-title">Você sabia?</h2>
+      <div class="numdados">
+        <p>
+          O Queimada Zero é uma solução baseada em evidências científicas e nas necessidades reais de pequenos produtores brasileiros.
+        </p>
+      </div>
+    </section>
+
+    <section class="dadosagricultor" aria-labelledby="agricultor-title">
+      <h2 id="agricultor-title" class="sr-only">Informações sobre agricultores na Amazônia</h2>
+      <p>
+        Pequenos agricultores representam 72% dos produtores rurais na Amazônia. Eles são a base da economia local e essenciais para a segurança alimentar
+        da região, produzindo a maior parte dos alimentos consumidos.
+      </p>
+      <p>
+        Comunidades tradicionais têm estratégias adaptativas, como o profundo conhecimento local de rios, florestas e ciclos naturais. No entanto, essas práticas,
+        estão se mostrando insuficientes para lidar com a intensificação dos eventos climáticos extremos.
+      </p>
+      <p>
+        Queimadas e secas estão diretamente ligadas ao desmatamento e à degradação florestal, afetando a produtividade agrícola e a segurança alimentar.
+        Além disso, as queimadas empobrecem o solo e agravam as mudanças climáticas extremas.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container-footer">
       <div class="links-footer">
         <h3>Links Rápidos</h3>
         <ul class="ul-footer">
           <li><a href="index.html">Início</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="projeto.html">Projetos</a></li>
           <li><a href="integrantes.html">Sobre Nós</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contato.html">Contato</a></li>
@@ -95,6 +127,7 @@ alimentar. Além disso, as queimadas empobrecem o solo e agravam as mudanças cl
       <p><strong>Inovação que acessibiliza o conhecimento.</strong></p>
     </div>
   </footer>
-    <script src="script/script.js"></script>
+
+  <script src="script/script.js"></script>
 </body>
 </html>
