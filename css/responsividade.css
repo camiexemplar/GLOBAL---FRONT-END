@@ -398,6 +398,11 @@ textarea {
 .newsletter__pai input[type="submit"] {
   cursor: pointer;
 }
+.email__numero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 }
 
