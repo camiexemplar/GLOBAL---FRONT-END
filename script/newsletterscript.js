@@ -188,4 +188,4 @@ function autoSlide() {
 }
 
 // intervalo imagens
-setInterval(autoSlide, 10000);
+setInterval(autoSlide, 20000);
