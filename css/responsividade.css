@@ -479,6 +479,14 @@ button.prev:hover,
 button.next:hover {
   background-color: rgba(131, 192, 131, 0.8);
 }
-
+#limpar:hover {
+  background-color: rgb(206, 0, 0);
+}
+#enviar:hover {
+  background-color: rgb(0, 85, 21);
+}
+.faqajuda a:hover {
+  text-decoration: underline; 
+}
 }
 
