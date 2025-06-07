@@ -15,46 +15,38 @@
 </head>
 <body>
   <header>
-    <nav class="menu-global" aria-label="Menu principal">
+    <section class="menu-global">
       <div class="contain">
-        <div>
-          <h1 class="logo">CGL</h1>
+        <div class="logo-container">
+          <a href="index.html" class="logo-link">
+            <img src="img/logo.png" alt="LOGO QUEIMAZERO" class="logo-footer">
+          </a>
         </div>
-        <div class="navigation">
+        <nav class="navigation" aria-label="Menu principal">
           <div class="hamb">
-            <input
-              type="checkbox"
-              id="menuhamb"
-              class="container__botao"
-              aria-controls="menu-principal"
-              aria-expanded="false"
-              aria-label="Abrir e fechar menu principal"
-            />
-            <label for="menuhamb" tabindex="0" role="button" aria-pressed="false">
-              <span class="hamburguer" aria-hidden="true"></span>
-              <img
-                src="/img/Hamburger_icon.svg.png"
-                alt="Ícone do menu do site"
-                aria-hidden="true"
-              />
+            <input type="checkbox" id="menuhamb" class="container__botao" />
+            <label for="menuhamb">
+              <span class="hamburguer"></span>
+              <img src="/img/Hamburger_icon.svg.png" alt="Menu do site" />
             </label>
-            <ul class="lista-hamb" id="menu-principal" role="menu" aria-label="Categorias do site">
-              <li class="categorias" role="presentation">Categorias</li>
-              <li role="none"><a href="index.html" role="menuitem">Início</a></li>
-              <li role="none"><a href="projeto.html" role="menuitem">Projeto</a></li>
-              <li role="none"><a href="faq.html" role="menuitem">FAQ</a></li>
-              <li role="none"><a href="integrantes.html" role="menuitem">Integrantes</a></li>
-              <li role="none"><a href="contato.html" role="menuitem">Contato</a></li>
+            <ul class="lista-hamb">
+              <li class="categorias">Navegação</li>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="projeto.html">Projeto</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="integrantes.html">Integrantes</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
           </div>
-        </div>
+        </nav>
       </div>
-      <div class="imgamazon-slideshow">
+
+      <div class="imgamazon-slideshow" role="img" aria-label="Imagem da floresta amazônica">
         <div class="imgamazon">
-          <h2 class="titulo-main">Global Solution</h2>
+          <h2 class="titulo-main">Protegendo Agricultores das Queimadas</h2>
         </div>
       </div>
-    </nav>
+    </section>
   </header>
 
   <main class="tudosobre">
@@ -111,32 +103,35 @@
   </main>
 
   <footer class="footer">
-    <section class="footer-integrantes">
-      <div class="container-footer">
-        <div class="links-footer">
-          <h3>Links Rápidos</h3>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projeto.html">Projeto</a></li>
-            <li><a href="integrantes.html">Sobre Nós</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-        <div class="contato-footer">
-          <h3>Contato</h3>
-          <address>
-            <p>Av. Paulista, 1106 - Bela Vista, São Paulo - SP, 01311-000</p>
-            <p>Telefone: (11) 3385-8010</p>
-          </address>
-        </div>
+    <div class="container-footer">
+      <div class="logo-section">
+        <img src="img/logo.png" alt="LOGO QUEIMAZERO" class="logo-footer">
+        <h3>Queimada Zero</h3>
+        <p>Alerta de queimadas para pequenos agricultores</p>
       </div>
-      <div class="direitos-footer">
-        <p>© 2025 CGL. Todos os direitos reservados.</p>
-        <p>Desenvolvido por CGL Queimada Zero</p>
-        <p><strong>Inovação que acessibiliza o conhecimento</strong></p>
+      
+      <div class="links-section">
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projeto.html">Projeto</a></li>
+          <li><a href="integrantes.html">Sobre Nós</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
       </div>
-    </section>
+      
+      <div class="contact-section">
+        <h4>Contato</h4>
+        <p>Av. Agricultura, 456 - Zona Rural</p>
+        <p>São Paulo - SP, 01234-000</p>
+        <p>contato@queimadazero.org.br</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>© 2025 Queimada Zero - Todos os direitos reservados</p>
+    </div>
   </footer>
 
   <script src="script/script.js"></script>
