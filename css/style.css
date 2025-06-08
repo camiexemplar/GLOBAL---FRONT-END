@@ -103,13 +103,14 @@
  justify-content: center;
 }
 .titulo-main {
-  font-family: var(--fonte-segundaria);
+  font-family: var(--fonte-primaria);
   text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.295);
   font-size: 30px;
   color: rgb(255, 255, 255);
   left: 15px;
   top: 120px;
   z-index: 1;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -246,6 +247,7 @@
 .membros .nome {
   font-weight: 600;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .membros .rm {
